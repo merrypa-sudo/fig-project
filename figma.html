@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FigmaProject</title>
+    <style>
+        nav{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            justify-content: space-evenly;
+            width: 200px;
+           
+            
+        }
+
+        .nav-img{
+            width: 100px;
+            height: 50px;
+            
+        }
+
+        .list{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 30px;
+            gap: 10px;
+            color: #002F4C;
+        }
+
+        .Contact{
+                background-color: #004E7E;
+                margin-left: 30px;
+                padding: 5px;
+                 margin-right: 5px;
+                 color: aliceblue;
+        }
+
+        .Contact:hover{
+            background-color: #004E7E;
+            transform: scale(1.1);
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .hero section{
+            background-color: #F2FAFF;
+
+        }
+        h1{
+            font-size: medium;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 10px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .rec{
+            margin: 10px;
+            position: relative;
+            animation: moveRight 3s infinite alternate;
+        }
+        @keyframes moveRight{
+            from { left: 0;}
+            to {left: 50px;}
+        }
+
+        .button{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            padding-top: 10px;
+            justify-items: center;
+            justify-content: space-between;
+        }
+
+        p{
+            font-size: 10px;
+        }
+        .learn{
+          background-color: #004E7E;
+                padding: 5px;
+                 color: aliceblue;  
+        }
+
+        .learn:hover{
+            background-color: #004E7E;
+            transform: scale(1.1);
+        }
+        .choose{
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .use{
+        justify-content: space-between;
+        margin: 30px;
+        line-height: 30px;
+        text-align: left;
+        }
+
+         .use p{
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+
+         }
+         .use h3{
+        text-align: center;
+        font-weight: 1000;
+        font-size: 30px;
+         }
+
+         .first{
+            margin-bottom: 40px;
+            line-height:
+            text-align: left;
+         }
+
+         .btn2{
+            margin-left: 110px;  
+         }
+.grp3{
+    animation: bounce 3s infinite;
+}
+@keyframes bounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-100px);}
+}
+
+         .about-text p{
+            text-align: left;
+            font-size: 18px;
+         }
+
+         .apart{
+            font-size: 30px;
+         }
+
+         .quest{
+            font-size: 22px;
+         }
+
+         .freq{
+            background-color: #D9E8F2;
+         }
+
+         .ask{
+            background-color: #D9E8F2;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: left;
+            padding: 10px;
+         }
+         .last{
+            background-color: #F5F6FA;
+            text-align: left;
+            font-size: 40px;
+            padding: 10px;
+            margin: 10px;
+         }
+
+         .lst-img{
+            align-items: end;
+            justify-content: right;
+            text-align: right;
+         }
+
+         .names{
+            font-size: 30px;
+         }
+
+         /* Tablet */
+@media (min-width: 768px) {
+   nav{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            justify-content: space-evenly;
+            width: 100%
+           
+            
+        }
+
+        .nav-img{
+            width: 200px;
+            height: 100px;
+            
+        }
+
+        .list{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 50px;
+            margin-left: 30px;
+            font-size: 30px;
+            gap: 30px;
+            color: #002F4C;
+        }
+
+        .Contact{
+                background-color: #004E7E;
+                margin-left: 90px;
+                padding: 5px;
+                 color: aliceblue;
+        }
+
+        .Contact:hover{
+            background-color: #004E7E;
+            transform: scale(1.1);
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .hero section{
+            background-color: #F2FAFF;
+
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 30px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .rec{
+            height: 600px;
+            width: 900px;
+            margin: 10px;
+            position: relative;
+            animation: moveRight 3s infinite alternate;
+        }
+        @keyframes moveRight{
+            from { left: 0;}
+            to {left: 300px;}
+        }
+
+        .button{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 15px;
+            padding-top: 10px;
+            justify-items: center;
+            justify-content: space-between;
+        }
+
+        p{
+            font-size: 15px;
+        }
+        .learn{
+          background-color: #004E7E;
+                padding: 10px;
+                 color: aliceblue;  
+        }
+
+        .learn:hover{
+            background-color: #004E7E;
+            transform: scale(1.1);
+        }
+        .choose{
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .use{
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr;  
+        justify-content: space-between;
+        margin: 30px;
+        line-height: 30px;
+        text-align: left;
+        }
+
+         .use p{
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+
+         }
+         .use h3{
+        text-align: center;
+        font-weight: 1000;
+        font-size: 30px;
+         }
+
+         .first{
+            margin-bottom: 40px;
+            line-height:
+            text-align: left;
+         }
+
+         .btn2{
+            margin-left: 110px;  
+            padding: 10px;
+         }
+
+         .btn2:hover{
+             background-color: #004E7E;
+            transform: scale(1.1);
+            color: #D9E8F2;
+         }
+         .about{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+         }
+
+         .about-text{
+            line-height: 40px;
+         }
+
+.grp3{
+
+    height: 600px;
+    width: 600px;
+    animation: bounce 3s infinite;
+}
+@keyframes bounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-100px);}
+}
+
+         .about-text p{
+            text-align: left;
+            font-size: 18px;
+         }
+
+
+         .apart{
+            font-size: 30px;
+         }
+
+         .project{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 10px;
+             position: relative;
+            animation: moveRight 3s infinite alternate;
+        }
+        @keyframes moveRight{
+            from { left: 0;}
+            to {left: 300px;}
+        }
+        .pro-img{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: flex-start;
+            width: 600px
+        }
+         .quest{
+            font-size: 40px;
+         }
+
+         .freq{
+            background-color: #D9E8F2;
+         }
+
+         .ask{
+            background-color: #D9E8F2;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: left;
+            padding: 10px;
+         }
+
+         .offer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+         }
+         .last{
+            background-color: #F5F6FA;
+            text-align: left;
+            font-size: 10px;
+            padding: 10px;
+            margin: 10px;
+         }
+
+         .lst-img{
+            align-items: end;
+            justify-content: right;
+            text-align: right;
+         }
+
+         .lst{
+            font-size: 20px;
+         }
+
+         .names{
+            font-size: 30px;
+            justify-content: right;
+         }
+        }
+/* Laptop & Desktop */
+@media (min-width: 1024px) {
+  nav{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            justify-content: space-evenly;
+            margin: 30px;
+            width: 90%    
+        }
+
+        .nav-img{
+            width: 200px;
+            height: 100px;
+            
+        }
+
+        .list{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 50px;
+            margin-left: 30px;
+            font-size: 30px;
+            gap: 30px;
+            color: #002F4C;
+        }
+
+        .Contact{
+                background-color: #004E7E;
+                margin-left: 100px;
+                padding: 5px;
+                 color: aliceblue;
+        }
+
+        .Contact:hover{
+            background-color: #004E7E;
+            transform: scale(1.1);
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .hero section{
+            background-color: #F2FAFF;
+
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 30px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .rec{
+            height: 400px;
+            width: 600px;
+            margin: 10px;
+            position: relative;
+            animation: moveRight 3s infinite alternate;
+        }
+        @keyframes moveRight{
+            from { left: 0;}
+            to {left: 100px;}
+        }
+
+        .button{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 15px;
+            padding-top: 20px;
+            justify-items: center;
+            justify-content: space-between;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .Us{
+            padding: 10px;
+                font-size: 25px;
+                border-radius: 20px;
+                 color: black
+        }
+
+        .learn{
+          background-color: #004E7E;
+                padding: 10px;
+                font-size: 25px;
+                border-radius: 20px;
+                 color: aliceblue;  
+        }
+        .Us:hover{
+            background-color: #004E7E;
+            transform: scale(1.1);
+            color: #D9E8F2;
+        }
+
+        .her{
+            height: 40px;
+            width: 40px;
+            padding-top: 50px;
+        }
+
+        .learn:hover{
+            background-color: #004E7E;
+            transform: scale(1.1);
+        }
+        .choose{
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .use{
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr;  
+        justify-content: space-between;
+        margin: 30px;
+        line-height: 30px;
+        text-align: left;
+        }
+
+         .use p{
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+
+         }
+         .use h3{
+        text-align: center;
+        font-weight: 1000;
+        font-size: 30px;
+         }
+
+         .first{
+            margin-bottom: 40px;
+            line-height:
+            text-align: left;
+         }
+
+         .btn2{
+            margin-left: 110px;  
+            padding: 10px;
+         }
+
+         .btn2:hover{
+             background-color: #004E7E;
+            transform: scale(1.1);
+            color: #D9E8F2;
+         }
+         .about{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+         }
+
+         .about-text{
+            line-height: 40px;
+         }
+
+.grp3{
+
+    height: 600px;
+    width: 600px;
+    animation: bounce 3s infinite;
+}
+@keyframes bounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-100px);}
+}
+
+         .about-text p{
+            text-align: left;
+            font-size: 18px;
+         }
+
+         .txt{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+         }
+
+         .txt p{
+            text-align: left;
+         }
+
+         .txt-frst{
+            font-size: 25px;
+            font-weight: 400;
+            text-align: left;
+
+         }
+
+         .apart{
+            font-size: 30px;
+         }
+
+         .project{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 10px;
+             position: relative;
+            animation: moveRight 3s infinite alternate;
+        }
+        @keyframes moveRight{
+            from { left: 0;}
+            to {left: 100px;}
+        }
+        .pro-img{
+            height:;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            align-items: flex-start;
+            width: 600px
+        }
+         .quest{
+            font-size: 40px;
+         }
+
+         .freq{
+            background-color: #D9E8F2;
+         }
+
+         .ask{
+            background-color: #D9E8F2;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: left;
+            padding: 10px;
+         }
+
+         .offer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+         }
+         .last{
+            background-color: #F5F6FA;
+            text-align: left;
+            font-size: 10px;
+            padding: 10px;
+            margin: 10px;
+         }
+
+         .lst-img{
+            align-items: end;
+            justify-content: right;
+            text-align: right;
+            margin-left: 100px;
+         }
+
+         .lst{
+            font-size: 20px;
+         }
+
+         .names{
+            font-size: 30px;
+            justify-content: right;
+         }
+         .get h1{
+            text-align: center;
+         }
+
+         .get-img{
+           margin: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+         }
+         .png{
+            height: 100px;
+            width: 100px;
+         }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- nav section -->
+     <nav>
+<div>
+    <img class="nav-img" src="image/Orange Minimalist Real Estate Logo 2.png" alt="">
+</div>
+
+<div>
+   <ul class="list">
+            <li class="Home"><a>Home</a></li>
+            <li class="About"><a>About</a></li>
+            <li class="Service"><a>Service</a></li>
+            <li class="Contact"><a>Contact</a></li> 
+    </ul>         
+</div>
+     </nav>
+
+     <!-- hero section -->
+      <div class="hero section">
+        <h1>Building Dreams, One brick at a Time</h1>
+        <h3>Crafting Exceptional Spaces that Define Your Vision.</h3>
+        <img class="rec" src="image/Rectangle 1.png" alt="" height="400%" width="360px">
+      </div>
+
+       <div class="button">
+        <button class="learn">Learn More</button>
+        <button class="Us">Contact Us</button>
+        <div>
+        <img class="her" src="image/Group 2.png" alt="" height="20px" width="20px">
+        </div>
+        <div>
+        <img class="her" src="image/100.png" alt="" height="20px" width="20px">
+        <p>Satisfied clients</p>
+        </div>
+        <div>
+        <img class="her" src="image/150.png" alt="" height="20px" width="20px">
+        <p>Finished project</p>
+        </div>
+
+        <div>
+        <img class="her" src="image/75.png" alt="" height="20px" width="20px">
+        <p>Official contract</p>
+        </div>
+        </div>
+
+        <div class="choose">
+            <h4>Why Choose Us</h4>
+        
+        <div class="use">
+        <div class="first">
+            <h3>Trusted Expertise</h3>
+            <P>Decades of experience for exceptional results.</P>
+        </div>
+
+        <div class="scd">
+            <h3>Crafting Quality</h3>
+            <P>Meticulous craftsmanship, top-tier materials.</P>
+        </div>
+
+        <div class="trd">
+            <h3>Your Vision, Our Focus</h3>
+            <P>Tailored solutions for your unique project.</P>
+        </div>
+        </div>
+        </div>
+
+        <div class="choose">
+            <h4>About Us</h4>
+        </div>
+
+        <div class="about">
+        <div class="about-text">
+            
+            <P>Welcome to ZenithBuild, where construction<br>
+                 meets craftsmanship. With over 10 years of <br>
+                 experience, we've been dedicated to creating <br>
+                 spaces that inspire.<br>
+                At ZenithBuild, we're not just builders; we're <br>
+                partners in your project's success. Let's build <br>
+                something extraordinary together.
+            </P>
+            <button class="btn2">Learn More</button>
+            </P>
+        </div>
+        <div class="scd">
+            <img class="grp3" src="image/Group 3 (1).png" alt="" height="350px" width="300px">
+        </div>
+        </div>
+
+        <div class="choose">
+            <h4>What we offer</h4>
+        
+        <div class="txt">
+        <div class="first">
+            <img src="image/Group 6.png" alt="">
+            <h3 class="txt-frst">Custom Building Construction</h3>
+            <P>Tailored to meet your unique vision and preferences, our custom building construction service brings dream homes to life. We work closely with you to create a residence that suits your lifestyle.</P>
+        </div>
+
+        <div class="scd">
+            <img src="image/ri_building-2-fill.png" alt="">
+            <h3 class="txt-frst">Renovations and Remodeling</h3>
+            <P>Enhance and revitalize your commercial space with our renovation and remodeling expertise. We provide solutions to transform your property, improving functionality and aesthetics.</P>
+        </div>
+
+        <div class="trd">
+            <img src="image/Group 2.png" alt="">
+            <h3 class="txt-frst">Sustainable Building Solutions</h3>
+            <P>Committed to environmental responsibility, our sustainable building solutions integrate eco-friendly practices and materials into your construction projects.</P>
+        </div>
+        </div>
+
+        <div class="pro-img">
+           <img src="image/Rectangle 5.png" alt="" height="30px" width="180px"><a class="quest">Our Projects.</a> 
+        </div>
+
+        <div class="project">
+        <div class="bed 1">
+            <img src="image/Rectangle 6.png" alt="" height="300px" width="350px">
+            <h3 class="apart">2Bedrooms Bungalow</h3>
+        </div>
+
+        <div class="bed 2">
+            <img src="image/Rectangle 7.png" alt="" height="300px" width="350px">
+            <h3 class="apart">3 Bedrooms with Basement</h3>
+        </div>
+
+        <div class="bed 3">
+            <img src="image/Rectangle 8.png" alt="" height="300px" width="350px">
+            <h3 class="apart">5 Bedrooms Mansion.</h3>
+        </div>
+        </div>
+
+        <div class="pro-img">
+           <img src="image/Rectangle 5.png" alt="" height="30px" width="100px"><a class="quest">Frequently asked question.</a> 
+        </div>
+        
+        <div class="">
+        <h3 class="ask">What types of construction projects does your company handle?</h3>
+        <h3 class="ask">How do I request a quote for my project?</h3>
+        <h3 class="ask">Do you offer sustainable or eco-friendly construction options?</h3>
+        <h3 class="ask">What types of construction projects does your company handle?</h3>
+        </div>
+
+        <div class="choose">
+            <h4>What we offer</h4>
+        
+        <div class="offer">
+        <div class="last">
+            <P class="lst">Outstanding craftsmanship and a seamless construction experience. ZenithBuild brought our dream home to life, and we're thrilled with the results.</P>
+            <a class="names">Dr Andrew James</a><img class="lst-img" src="image/unsplash_pTrhfmj2jDA.png" alt="" height="45px" width="45px">
+        </div>
+
+        <div class="last">
+            <P class="lst">Exceptional commitment to sustainability. ZenithBuild incorporated eco-friendly solutions into our project without compromising quality.</P>
+            <a class="names">Mrs. Diana</a><img class="lst-img" src="image/unsplash_7mBictB_urk.png" alt="" height="45px" width="45px">
+        </div>
+
+        <div class="last">
+            <P class="lst">Choosing ZenithBuild was the best decision for our office remodel. Their expertise and dedication made the process efficient and stress-free. </P>
+            <a class="names">Isreal Jacob</a><img class="lst-img" src="image/unsplash_nhBYukjZg_I.png" alt="" height="45px" width="45px">
+            
+        </div>
+        </div>
+
+        <div class="get">
+            <h1 class="get-txt">Get through with us</h1>
+        <div class="get-img">
+            <div class="png">
+            <img src="image/Group 20 (2).png" alt="">
+        </div>
+        <div class="png">
+            <img src="image/Rectangle (1).png" alt="">
+        </div>
+        </div>
+        </div>
+
+<!-- <footer class="footer">
+<div>
+    <img class="foot" src="image/Orange Minimalist Real Estate Logo 2.png" alt="">
+</div>
+
+<div>
+   <ul class="ft-list">
+            <li class="Home"><a>Home</a></li>
+            <li class="About"><a>About</a></li>
+            <li class="Service"><a>Service</a></li>
+            <li class="Contact"><a>Contact</a></li> 
+    </ul>         
+</div>
+</footer> -->
+</body>
+</html>
